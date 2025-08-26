@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet">
+    <title>Warzone</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo"></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">ИГРЫ</a></li>
+                <li><a href="#">СЕЗОНЫ</a></li>
+                <li><a href="#">НОВОСТИ</a></li>
+                <li><a href="#">МАГАЗИН</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="big-picture">
+            <img src="images/warzone.webp" alt="Warzone">
+    </div>
+    <div class="play">
+    <h1>Call of Duty Warzone</h1>
+    <p>--играть бесплатно--</p>
+    </div>
+    
+    <div class="platforms">
+        <p><a href="https://www.callofduty.com/ru/warzone">XBOX</a></p>
+        <p><a href="https://www.xbox.com/ru-ru/games/store/call-of-duty-warzone/9NNFG8BQRCXL">WINDOWS</a></p>
+        <p><a href="https://store.playstation.com/en-us/error">PLAYSTATION</a></p>
+        <p><a href="https://download.battle.net/ru-ru?product=codwz2">BATTLE.NET</a></p>
+        <p><a href="https://store.steampowered.com/app/1962663">STEAM</a></p>
+    </div>
+    
+    
+    <div>
+        <p>Посмотрите наверх. Масштабное преобразование района Downtown на карте Verdansk начинается с башни "Смотровая 
+            площадка" - небоскреба, возвышающегося в центре города. Вы можете зайти через лобби, попасть на башню по тросу
+            или забраться на крышу по кранам и сразу 
+            же включиться в игру.</p>
+    </div>
+    <div class="">
+        <video controls width="800">
+            <source src="videos/eLV4pQeiZiht7Qhwni15+AYuISufev7w.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div>
+    <img src="images/S04_Events_CodToons-WZ_LP-7.17-update.webp" alt="COD-TOOLS" class="codtools-image">
+    </div>
+    <div>
+        <h2>НОВОЕ МЕРОПРИЯТИЕ
+            МУЛЬТИCOD |||||||||||||||||||||||</h2>
+        <p>Не надо настраивать телевизор. Присоединяйтесь к событию "МультиCOD" и разблокируйте трофеи, вдохновленные 
+            "Американским папашей", а также модуль оружия, который значительно улучшит ваши впечатления от просмотра. 
+            Выполняйте испытания в сетевой игре, режиме "Зомби" и Call of Duty: Warzone и МУЛЬТИплицируйте свой арсенал.
+        </p>
+        <p>American Dad! TM & © 2025 20th Television</p>
+    </div>
+    <div>
+        <ul>
+            <li><a href="#">ПОЛУЧИТЕ ИНФОРМАЦИЮ</a></li>
+        </ul>
+    </div>
+    <div>
+    <p>______________________________________________________</p>
+    <h3>NEW FEATURES IN SEASON 04</h3>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <img src="images/S04_New-In-Season_Care-Package.webp">
+            <img src="images/S04_New-In-Season_LootMaster.webp">
+            <img src="images/WZ_S4_Hand-Cannon.webp">
+            <img src="images/WZ_S4_Search-And-Destroy.webp">
+            <img src="images/WZ_S4_Door-Barricade.webp">
+        </div>
+        <div class="buttons">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    <div>
+        <img src="images/WZ_S4_BlackCell.webp" alt="black-sektor">
+    </div>
+    <div>
+    <h4>ЧЁРНЫЙ СЕКТОР. ||||||||||||||||||||||</h4>
+    <p>С "Черным сектором" получите эксклюзивный доступ к странице "Черного сектора" и игровым материалам на сумму более
+        7000 очков COD*. Кроме того, получайте дополнительное увеличение оружейного опыта и опыта игрока на 10% за каждую 
+        последующую покупку "Черного сектора". Этот бонус лояльности "Черного сектора" может достичь максимум 50% только 
+        для сезонов Black Ops 6.
+    </p>
+    </div>
+    <div>
+        <ul>
+            <li><a href="#">ПОЛУЧИТЕ ЧЁРНЫЙ СЕКТОР</a></li>
+        </ul>
+    <p>*Ценность страницы "Черного сектор" основана на сопоставимых наборах в игровом магазине.</p>
+    </div>
+    <div>
+        <img src="images/WZ_S4_Battle-Pass.webp" alt="Battle-Pass">
+    </div>
+    <div>
+    <h5>ПОЛУЧИТЕ БОЕВОЙ ПРОПУСК. </h5>
+    <p>Получите новый боевой пропуск сезона 04 и верните до 1100 очков COD по мере повышения уровня. Используйте их, 
+        чтобы получить боевой пропуск следующего сезона, 
+        и игра не остановится.
+    </p>
+    </div>
+    <div>
+        <ul>
+            <li><a href="#">ПОДРОБНЕЕ</a></li>
+        </ul>
+    </div>
+    <div>
+         <h1>ДОЛГИЙ ПУТЬ</h1>
+        <img src="images/BO6_S4_Roadmap_16x9_EN-UK.webp" alt="Battle-Pass">
+    </div>
+    <script>
+let index = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slides img').length;
+
+function showSlide() {
+    slides.style.transform = `translateX(${-index * 800}px)`; // 800px = ширина слайдера
+}
+
+function nextSlide() {
+    index = (index + 1) % totalSlides;
+    showSlide();
+}
+
+function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide();
+}
+
+// Автопрокрутка каждые 3 секунды
+setInterval(nextSlide, 3000);
+</script>
+</body>
+</html>
