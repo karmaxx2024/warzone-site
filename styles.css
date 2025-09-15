@@ -7,6 +7,8 @@
             line-height: 1.5;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center
         }
 
         /* Контейнер для контента */
@@ -19,6 +21,7 @@
 
         /* Стили для меню */
         .site-header {
+            display: flex;
             background: #968a8a6b;
             padding: 0;
             position: relative;
