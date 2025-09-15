@@ -10,9 +10,9 @@
         /* Контейнер для контента */
         .container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 auto; 
             padding: 20px;
-            padding-top: 70px; /* Чтобы контент не перекрывался фиксированным меню */
+            padding-top: 70px; 
         }
 
         /* Стили для меню */
@@ -26,6 +26,8 @@
 
         .main-nav ul {
             position: fixed;
+            top: 0; 
+            left: 0; 
             list-style: none;
             background: rgba(17, 17, 17, 0.8);
             margin: 0;
@@ -37,7 +39,6 @@
             width: 100%;
             z-index: 1000;
         }
-
         .main-nav a {
             color: white;
             font-size: larger;
@@ -228,6 +229,5 @@
             text-decoration: none;
             font-weight: bold;
         }
-
 
 
