@@ -3,12 +3,11 @@
             font-family: monospace;
             font-size: large;
             background-color: #1b1c1c;
-            text-align: justify;
-            line-height: 1.5;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center
+            justify-content: flex-start;
+            flex-direction: column;
         }
 
         /* Контейнер для контента */
@@ -233,3 +232,4 @@
             text-decoration: none;
             font-weight: bold;
         }
+
