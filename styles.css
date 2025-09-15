@@ -94,17 +94,13 @@
             filter: brightness(0.8);
         }
 
-        .play h1 {
-            display: flex;
-            justify-content: center;
-            flex-wrap: nowrap;
-        }
-        
+        .play h1,
         .play p {
-            display: flex;
-            justify-content: center;
-            flex-wrap: nowrap;
-        }
+           display: flex;
+           flex-direction: column; /* элементы друг под другом */
+           justify-content: center;
+           align-items: center;
+       }
 
         .platforms {
             display: flex;
@@ -233,5 +229,6 @@
             text-decoration: none;
             font-weight: bold;
         }
+
 
 
